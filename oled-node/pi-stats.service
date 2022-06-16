@@ -1,0 +1,12 @@
+[Unit]
+Description=Script to show stats on Pi OLED displays
+
+[Service]
+Type=simple
+User=root
+ExecStart=python3 /home/ubuntu/pi_stats.py
+Restart=always
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Script to monitor for button presses that control the rack OLED screens
+
+[Service]
+Type=simple
+User=root
+ExecStart=python3 /home/ubuntu/rack_oled_service.py
+Restart=always
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

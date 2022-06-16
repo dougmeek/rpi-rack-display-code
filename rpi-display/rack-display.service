@@ -1,0 +1,12 @@
+[Unit]
+Description=Script to monitor for button presses that control the rack display screen
+
+[Service]
+Type=simple
+User=root
+ExecStart=python3 /home/ubuntu/rack_display_service.py
+Restart=always
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
