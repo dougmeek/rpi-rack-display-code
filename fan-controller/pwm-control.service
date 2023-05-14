@@ -1,0 +1,12 @@
+[Unit]
+Description=Script to control fan PWM based on rack internal temp
+
+[Service]
+Type=simple
+User=root
+ExecStart=python3 /home/ubuntu/pwm_control.py
+Restart=always
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
