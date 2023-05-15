@@ -22,9 +22,9 @@ pwm_freq = 25000
 
 # Define fan curve
 percent_at_20c = 20
-percent_at_25c = 30
-percent_at_30c = 50
-percent_at_35c = 75
+percent_at_25c = 50
+percent_at_30c = 70
+percent_at_35c = 85
 percent_at_40c = 100
 
 
